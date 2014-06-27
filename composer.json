@@ -15,7 +15,7 @@
         "issues": "https://github.com/pompdelux/bernard-scheduler-bundle/issues"
     },
     "require": {
-        "pompdelux/bernard-scheduler-bundle": "1.*",
+        "pompdelux/phpredis-bundle": "1.*",
         "bernard/bernard-bundle" : "~1.0",
         "php": ">=5.5",
         "ext-redis": "2.2.x"
