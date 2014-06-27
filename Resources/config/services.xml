@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="pdl.bernard_scheduler.class">Pompdelux\BernardSchedulerBundle\Scheduler</parameter>
+        <parameter key="pdl.bernard_scheduler.runner.class">Pompdelux\BernardSchedulerBundle\Runner</parameter>
+    </parameters>
+
+    <services>
+        <service id="pdl.bernard_scheduler" class="%pdl.bernard_scheduler.class%">
+            <argument type="service" id="redis.bernard" />
+        </service>
+        <service id="pdl.bernard_scheduler.runner" class="%pdl.bernard_scheduler.runner.class%">
+            <argument type="service" id="phpredis.bernard" />
+            <argument type="service" id="bernard.producer" />
+            <argument type="service" id="logger" />
+        </service>
+    </services>
+</container>
