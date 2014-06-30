@@ -1,6 +1,6 @@
 <?php
 
-namespace Hanzo\Bundle\BernardSchedulerBundle\DependencyInjection;
+namespace Pompdelux\BernardSchedulerBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

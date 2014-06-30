@@ -1,6 +1,6 @@
 <?php
 
-namespace Hanzo\Bundle\BernardSchedulerBundle\DependencyInjection;
+namespace Pompdelux\BernardSchedulerBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
