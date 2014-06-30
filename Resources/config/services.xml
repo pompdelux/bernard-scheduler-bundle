@@ -10,10 +10,10 @@
 
     <services>
         <service id="pdl.bernard_scheduler" class="%pdl.bernard_scheduler.class%">
-            <argument type="service" id="redis.bernard" />
+            <argument type="service" id="pdl.phpredis.bernard" />
         </service>
         <service id="pdl.bernard_scheduler.runner" class="%pdl.bernard_scheduler.runner.class%">
-            <argument type="service" id="phpredis.bernard" />
+            <argument type="service" id="pdl.phpredis.bernard" />
             <argument type="service" id="bernard.producer" />
             <argument type="service" id="logger" />
         </service>
