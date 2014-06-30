@@ -2,7 +2,7 @@
 
 This bundle brings scheduling to your [BernardPHP](http://bernardphp.com/) powered [Symfony2](http://symfony.com/) app.
 
-It allows you to easily create multiple clients pointing to different databases and/or servers.
+Please note that this bundle relies on redis as backend.
 
 ## Install:
 
